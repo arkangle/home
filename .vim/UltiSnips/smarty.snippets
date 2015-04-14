@@ -1,0 +1,41 @@
+extends html
+snippet php
+{php}
+  ${1:// code...}
+{/php}
+endsnippet
+snippet foreach
+{foreach from=$${1:data} key='${2:key}' item='${3:item}'}
+  ${4:// stuff...}
+{/foreach}
+endsnippet
+snippet if
+{if ${1:/* condition */}}
+  ${2:// code...}
+{/if}
+endsnippet
+snippet ife
+{if ${1:/* condition */}}
+  ${2:// code...}
+{else}
+  ${3:// code...}
+{/if}
+endsnippet
+snippet else
+{else}
+  ${1:// code...}
+${2:{/if}}
+endsnippet
+snippet elseif
+{elseif ${1:/* condition */}}
+  ${2:// code...}
+${3:{/if}}
+endsnippet
+snippet lit
+{literal}
+  ${1:// code...}
+{/literal}
+endsnippet
+snippet stag
+{${1:tag}}$2{/$1}
+endsnippet

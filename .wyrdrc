@@ -1,0 +1,4 @@
+include "/etc/wyrdrc"
+set center_cursor="true"
+bind "Q"                 quick_add
+bind "q"                 quit
