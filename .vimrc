@@ -22,6 +22,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Raimondi/delimitMate'
+Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'shawncplus/phpcomplete.vim'
 call vundle#end()
 
