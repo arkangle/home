@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Randr Setup
+Exec=~/bin/Xsetup
+OnlyShowIn=Awesome;
+X-GNOME-Autostart-enabled=true
+NoDisplay=true

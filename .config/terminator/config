@@ -1,0 +1,16 @@
+[global_config]
+[keybindings]
+[profiles]
+  [[default]]
+    background_image = None
+    login_shell = True
+    show_titlebar = False
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]

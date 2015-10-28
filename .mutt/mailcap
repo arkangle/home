@@ -1,0 +1,9 @@
+application/pdf; evince '%s' ; edit=evince '%s' ; test=test "$DISPLAY" != "" ; description="PDF"
+text/plain; view '%s'; edit=vi '%s'; compose=vi '%s'; needsterminal
+text/html; w3m -I %{charset} -T text/html;copiousoutput;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; soffice --nologo --writer '%s'; edit=soffice --nologo --writer '%s'; test=test -n "$DISPLAY"; description="Office Open XML Document"; nametemplate=%s.docx
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; soffice --nologo --calc '%s'; edit=soffice --nologo --calc '%s'; test=test -n "$DISPLAY"; description="Office Open XML Spreadsheet"; nametemplate=%s.xlsx
+application/msword; soffice --nologo --writer '%s'; edit=soffice --nologo --writer '%s'; test=test -n "$DISPLAY"; description="Microsoft Word Document"; nametemplate=%s.doc
+application/vnd.ms-excel; soffice --nologo --calc '%s'; edit=soffice --nologo --calc '%s'; test=test -n "$DISPLAY"; description="Microsoft Excel Document"; nametemplate=%s.xls
+application/vnd.oasis.opendocument.spreadsheet; soffice --nologo --calc '%s'; edit=soffice --nologo --calc '%s'; print=soffice --nologo --calc -p '%s'; test=test -n "$DISPLAY"; description="OpenDocument Spreadsheet"; nametemplate=%s.ods
+image/*; chromium-browser '%s';
