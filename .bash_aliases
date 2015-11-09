@@ -19,8 +19,7 @@ bind -m vi-insert "\C-l":clear-screen
 alias minecraft='java -Xmx1024M -Xms1024M -jar ~/minecraft/minecraft.jar'
 alias cap2esc="xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'"
 alias py='python3'
+alias s='sudo -E -u www-data'
+alias sim='sudo -E -u www-data vi'
+alias t='tmux at || tmux'
 
-
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
