@@ -68,7 +68,7 @@ alternative_order text/plain text/enriched text/html
  set fast_reply = yes
 # set fcc_attach = yes
 # set fcc_clear = no
-# set folder = 'imap://mail.mcholm.com/INBOX'
+# set folder = 'imap://mail.example.com/INBOX'
 # set folder_format = '%2C %t %N %F %2l %-8.8u %-8.8g %8s %d %f'
 # set followup_to = yes
 # set force_name = no
@@ -94,7 +94,7 @@ alternative_order text/plain text/enriched text/html
 # set history = '10'
 # set history_file = '~/.mutthistory'
 # set honor_followup_to = yes
-# set hostname = 'mcholm.com' # default: ''
+# set hostname = 'example.com' # default: ''
 # set ignore_linear_white_space = no
 # set ignore_list_reply_to = no
 # set imap_authenticators = ''
@@ -266,7 +266,7 @@ set move = no
 # set sort_browser = 'reverse-date'
 # set sort_re = yes
 # set spam_separator = ','
-# set spoolfile = 'imap://mail.mcholm.com/INBOX'
+# set spoolfile = 'imap://mail.example.com/INBOX'
 # set ssl_ca_certificates_file = ''
 # set ssl_client_cert = ''
  set ssl_force_tls = no
