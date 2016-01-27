@@ -7,9 +7,9 @@ set t_Co=256
 set nocompatible	" Use Vim defaults instead of 100% vi compatibility
 set backspace=indent,eol,start	" more powerful backspacing
 filetype off
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'vividchalk.vim'
 Plugin 'ctrlp.vim'
 Plugin 'The-NERD-tree'
@@ -25,7 +25,7 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'joonty/vdebug'
 Plugin 'gnupg.vim'
-"Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'elzr/vim-json'
