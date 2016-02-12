@@ -1,10 +1,13 @@
 #!/bin/bash
-XRANDR=`xrandr|grep ' connected'|awk '{print $1}' | grep -v 'LVDS-1'`
-xrandr --output LVDS-1 --mode 1920x1080
-if [[ $XRANDR = 'HDMI-1' ]];then
-echo HDMI
-xrandr --output HDMI-1 --mode 1920x1080 --above LVDS-1
-elif [[ $XRANDR = 'VGA-1' ]];then
-echo VGA
-xrandr --output VGA1 --mode 1024x768 --above LVDS-1
+MAIN=$1
+if [ -z "$MAIN" ];then
+  echo Main Display Required
+  xrandr|grep ' connected'|awk '{print $1}'
+  exit
+fi
+MODE=${2-1920x1080}
+EXTRA=`xrandr|grep ' connected'|awk '{print $1}' | grep -v $MAIN`
+xrandr --output $MAIN --mode $MODE
+if [ -n "$EXTRA" ];then
+  xrandr --output $EXTRA --mode $MODE --above $MAIN
 fi
