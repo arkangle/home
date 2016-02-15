@@ -29,6 +29,7 @@ Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'elzr/vim-json'
+Plugin 'vim-ruby/vim-ruby'
 
 call vundle#end()
 
