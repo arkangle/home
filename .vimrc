@@ -11,7 +11,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vividchalk.vim'
-Plugin 'ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'The-NERD-tree'
 Plugin 'Printer-Dialog'
 Plugin 'fugitive.vim'
