@@ -48,6 +48,8 @@ set number
 set autoindent		" always set autoindenting on
 set expandtab
 set smarttab
+set tabstop=2
+set shiftwidth=2
 nmap <tab> gt
 nmap <F1> :NERDTreeToggle<CR>
 nmap <F2> :NERDTreeFind<CR>
