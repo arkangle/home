@@ -56,6 +56,17 @@ nmap <F2> :NERDTreeFind<CR>
 nmap <F3> :set foldmethod=indent<CR>:set foldlevel=1<CR>:set foldnestmax=2<CR>
 nmap <F4> :set foldmethod=indent<CR>:set foldlevel=0<CR>:set foldnestmax=2<CR>
 nmap <space> 
+vnoremap <leader>64 y:let @"=system('base64 -w0', @")<cr>gvP
+vnoremap <leader>6d y:let @"=system('base64 --decode', @")<cr>gvP
+
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
+
 let g:ctrlp_prompt_mappings = {  'AcceptSelection("e")': [], 'AcceptSelection("t")': ['<cr>', '<c-m>'], }
 "let g:SuperTabDefaultCompletionType = "<c-tab>"
 let g:SuperTabDefaultCompletionType = "context"
@@ -82,7 +93,6 @@ set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.i
 
 " Make p in Visual mode replace the selected text with the "" register.
 "vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
-
 colo vividchalk
 "colo one
 
