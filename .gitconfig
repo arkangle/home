@@ -26,6 +26,7 @@
   gr = log --graph --pretty=format:'%Cred%h%Creset - %s (%Cblue%cn%Creset) %Cgreen(%cr)%Creset %Cred%d%Creset' --abbrev-commit --date=relative
   lg = log --graph --date=relative --decorate
   pl = pull --summary 
+  pr = pull --rebase --stat
 [core]
   pager = less -FRSX
 [push]
