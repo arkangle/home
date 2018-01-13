@@ -22,4 +22,6 @@ alias py='python3'
 alias s='sudo -E -u www-data'
 alias sim='sudo -E -u www-data vi'
 alias t='tmux at || tmux'
-
+alias dc='docker-compose'
+alias dcr='docker-compose run --rm'
+alias dce='docker-compose exec'
