@@ -12,7 +12,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vividchalk.vim'
 Plugin 'rakr/vim-one'
-Plugin 'ctrlpvim/ctrlp.vim'
+"Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 Plugin 'The-NERD-tree'
 Plugin 'Printer-Dialog'
 Plugin 'fugitive.vim'
@@ -36,6 +38,7 @@ Plugin 'hashivim/vim-hashicorp-tools'
 
 call vundle#end()
 
+nmap <C-p> :FZF<CR>
 " Now we set some defaults for the editor 
 " set linebreak		" Don't wrap words by default
 set textwidth=0		" Don't wrap lines by default 
@@ -69,7 +72,7 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
-let g:ctrlp_prompt_mappings = {  'AcceptSelection("e")': [], 'AcceptSelection("t")': ['<cr>', '<c-m>'], }
+"let g:ctrlp_prompt_mappings = {  'AcceptSelection("e")': [], 'AcceptSelection("t")': ['<cr>', '<c-m>'], }
 "let g:SuperTabDefaultCompletionType = "<c-tab>"
 let g:SuperTabDefaultCompletionType = "context"
 let g:UltiSnipsExpandTrigger="<tab>"

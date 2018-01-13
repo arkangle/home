@@ -7,7 +7,9 @@ set backspace=indent,eol,start	" more powerful backspacing
 filetype off
 call plug#begin()
 Plug 'vividchalk.vim'
-Plug 'ctrlpvim/ctrlp.vim'
+"Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'The-NERD-tree'
 Plug 'Printer-Dialog'
 Plug 'fugitive.vim'
@@ -41,13 +43,22 @@ set number
 set autoindent		" always set autoindenting on
 set expandtab
 set smarttab
+nmap <C-p> :FZF<CR>
 nmap <tab> gt
 nmap <F1> :NERDTreeToggle<CR>
 nmap <F2> :NERDTreeFind<CR>
 nmap <F3> :set foldmethod=indent<CR>:set foldlevel=1<CR>:set foldnestmax=2<CR>
 nmap <F4> :set foldmethod=indent<CR>:set foldlevel=0<CR>:set foldnestmax=2<CR>
 nmap <space> 
-let g:ctrlp_prompt_mappings = {  'AcceptSelection("e")': [], 'AcceptSelection("t")': ['<cr>', '<c-m>'], }
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  let g:ctrlp_use_caching = 0
+endif
+"let g:ctrlp_prompt_mappings = {  'AcceptSelection("e")': [], 'AcceptSelection("t")': ['<cr>', '<c-m>'], }
 "let g:SuperTabDefaultCompletionType = "<c-tab>"
 let g:SuperTabDefaultCompletionType = "context"
 let g:UltiSnipsExpandTrigger="<tab>"
