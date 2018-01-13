@@ -6,27 +6,28 @@
 set backspace=indent,eol,start	" more powerful backspacing
 filetype off
 call plug#begin()
-Plug 'vividchalk.vim'
+Plug 'vim-scripts/vividchalk.vim'
 "Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'The-NERD-tree'
-Plug 'Printer-Dialog'
-Plug 'fugitive.vim'
-Plug 'surround.vim'
-Plug 'smarty-syntax'
+Plug 'vim-scripts/The-NERD-tree'
+Plug 'vim-scripts/Printer-Dialog'
+Plug 'vim-scripts/fugitive.vim'
+Plug 'vim-scripts/surround.vim'
+Plug 'vim-scripts/smarty-syntax'
 Plug 'ervandew/supertab'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'Raimondi/delimitMate'
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'joonty/vdebug'
-Plug 'gnupg.vim'
+Plug 'vim-scripts/gnupg.vim'
 Plug 'shawncplus/phpcomplete.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'elzr/vim-json'
 Plug 'vim-ruby/vim-ruby'
+
 
 call plug#end()
 
