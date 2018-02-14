@@ -19,9 +19,10 @@ bind -m vi-insert "\C-l":clear-screen
 alias minecraft='java -Xmx1024M -Xms1024M -jar ~/minecraft/minecraft.jar'
 alias cap2esc="xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'"
 alias py='python3'
-alias s='sudo -E -u www-data'
-alias sim='sudo -E -u www-data vi'
 alias t='tmux at || tmux'
 alias dc='docker-compose'
 alias dcr='docker-compose run --rm'
 alias dce='docker-compose exec'
+alias dcl='docker-compose logs --tail=100'
+alias dct='docker-compose logs -f --tail=100'
+alias pem='openssl x509 -text -noout'
