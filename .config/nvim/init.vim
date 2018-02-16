@@ -44,12 +44,16 @@ set number
 set autoindent		" always set autoindenting on
 set expandtab
 set smarttab
+set tabstop=2
+set shiftwidth=2
 nmap <C-p> :FZF<CR>
 nmap <tab> gt
 nmap <F1> :NERDTreeToggle<CR>
 nmap <F2> :NERDTreeFind<CR>
 nmap <F3> :set foldmethod=indent<CR>:set foldlevel=1<CR>:set foldnestmax=2<CR>
 nmap <F4> :set foldmethod=indent<CR>:set foldlevel=0<CR>:set foldnestmax=2<CR>
+vnoremap <leader>64 y:let @"=system('base64 -w0', @")<cr>gvP
+vnoremap <leader>6d y:let @"=system('base64 --decode', @")<cr>gvP
 nmap <space> 
 if executable('ag')
   " Use ag over grep
