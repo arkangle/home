@@ -102,3 +102,4 @@ set showmatch		" Show matching brackets.
 set incsearch		" Incremental search
 "set autowrite		" Automatically save before commands like :next and :make
 set winminheight=0 
+set nohlsearch
