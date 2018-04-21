@@ -23,3 +23,4 @@ if [ -f /etc/bash_completion ]; then
   . /etc/bash_completion
 export PS1='\[\033]0;${USER}@${HOSTNAME}\007\e[31m\]\w\[\e[32m\]$(__git_ps1 " (%s)")\[\e[m\] >> '
 fi
+export FZF_DEFAULT_COMMAND='ag -g ""'

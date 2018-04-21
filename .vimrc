@@ -34,6 +34,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'elzr/vim-json'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'stephpy/vim-yaml'
+Plugin 'airblade/vim-rooter'
 Plugin 'hashivim/vim-hashicorp-tools'
 
 call vundle#end()
