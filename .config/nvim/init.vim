@@ -26,8 +26,9 @@ Plug 'shawncplus/phpcomplete.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'elzr/vim-json'
+Plug 'airblade/vim-rooter'
 Plug 'vim-ruby/vim-ruby'
-
+Plug 'hashivim/vim-hashicorp-tools'
 
 call plug#end()
 
