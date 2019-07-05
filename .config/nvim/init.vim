@@ -21,14 +21,15 @@ Plug 'honza/vim-snippets'
 Plug 'Raimondi/delimitMate'
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'joonty/vdebug'
-Plug 'vim-scripts/gnupg.vim'
-Plug 'shawncplus/phpcomplete.vim'
+"Plug 'vim-scripts/gnupg.vim'
+"Plug 'shawncplus/phpcomplete.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'elzr/vim-json'
 Plug 'airblade/vim-rooter'
 Plug 'vim-ruby/vim-ruby'
 Plug 'hashivim/vim-hashicorp-tools'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 call plug#end()
 
