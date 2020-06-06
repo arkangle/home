@@ -54,7 +54,7 @@ editor = os.getenv("EDITOR") or "editor"
 editor_cmd = terminal .. " -e " .. editor
 quit_cmd = "gnome-session-quit"
 lock_cmd = "gnome-screensaver-command -l"
-caps2esc = "xmodmap ~/.Xmodmap"
+cap2esc = "xmodmap ~/.Xmodmap"
 mixer_cmd = terminal .. " -e alsamixer"
 
 batteryWidget = wibox.widget.textbox()
@@ -119,7 +119,7 @@ myawesomemenu = {
    { "manual", terminal .. " -e man awesome" },
    { "edit config", editor_cmd .. " " .. awesome.conffile },
    { "restart", awesome.restart },
-   { "caps2esc", caps2esc },
+   { "cap2esc", cap2esc },
    { "mixer", mixer_cmd },
    { "lock", lock_cmd },
    { "quit", quit_cmd }
@@ -156,7 +156,7 @@ mykeyboardlayout = awful.widget.keyboardlayout()
 
 -- {{{ Wibar
 -- Create a textclock widget
-mytextclock = wibox.widget.textclock()
+mytextclock = wibox.widget.textclock("%a %b %e %l:%M %p")
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(

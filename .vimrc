@@ -34,7 +34,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'elzr/vim-json'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'stephpy/vim-yaml'
-Plugin 'airblade/vim-rooter'
+" Plugin 'airblade/vim-rooter'
 Plugin 'fatih/vim-go'
 Plugin 'hashivim/vim-hashicorp-tools'
 
@@ -85,6 +85,7 @@ let g:ycm_key_list_previous_completion=[]
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_seed_identifiers_with_syntax=1
 let delimitMate_expand_cr = 1
+let delimitMate_matchpairs = "(:),[:],{:}"
 " prtdialog
 let g:prd_paperIdx      = 7
 let g:prd_lineNrIdx     = 2
