@@ -11,6 +11,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vividchalk.vim'
+Plugin 'oceanlight'
 "Plugin 'rakr/vim-one'
 "Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'junegunn/fzf'
@@ -102,7 +103,7 @@ set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.i
 " Make p in Visual mode replace the selected text with the "" register.
 "vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
 colo vividchalk
-"colo one
+" colo oceanlight
 
 " Vim5 and later versions support syntax highlighting. Uncommenting the next
 " line enables syntax highlighting by default.
@@ -110,8 +111,8 @@ colo vividchalk
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
-set background=dark
-"set background=light
+" set background=dark
+" set background=light
 
 filetype indent plugin on
 

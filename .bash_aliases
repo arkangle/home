@@ -26,3 +26,16 @@ alias dce='docker-compose exec'
 alias dcl='docker-compose logs --tail=100'
 alias dct='docker-compose logs -f --tail=100'
 alias pem='openssl x509 -text -noout'
+
+alias k='kubectl'
+
+alias kp='k --context=prod --namespace=bb3-production'
+alias kd='k --context=prod --namespace=default'
+alias kk='k --context=prod --namespace=kube-system'
+alias kag='k --context=prod get --all-namespaces'
+
+alias kds='k --context=dev  --namespace=bb3-staging'
+alias kdd='k --context=dev --namespace=default'
+alias kdk='k --context=dev --namespace=kube-system'
+alias kdi='k --context=dev --namespace=istio-system'
+alias kdag='k --context=dev get --all-namespaces'
