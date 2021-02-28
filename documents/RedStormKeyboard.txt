@@ -1,0 +1,45 @@
+====================================================
+Key     Action                  Shift
+====================================================
+F1      Tactical Display        Run Shallow
+F2      Weapon Control          Search Left
+F3      Threat Display          Search Right
+F4      Periscope               Activate Torpedo
+F5      Acoustic Signature
+F6      Compare Sonar
+F7      Ship Database
+F8      Sea Condition           Map Overlay
+F9      Set Depth               Drop Torpedo
+F10     Set Course
+
+====================================================
+Key     Action                  Shift
+====================================================
+1       Noise Maker
+2       Decoy
+3       Fire Stinger
+4       Fire Torpedo            Load
+5       Fire Sealance           Load
+6       Fire Harpoon            Load
+7       Tomahawk                Load
+8       Active Sonar
+9       Active Radar
+0       Silent Running
+-       Decrease Speed
+=       Increase Speed
+BS      ID Periscope Visual
+
+====================================================
+Key     Action                  Shift
+====================================================
+Z       Zoom Map
+X       Unzoom Map
+C       Switch Contact
+V       Weapon Loadout
+B       Damage Report
+N       Switch Torpedo
+M       View Threat
+,<      Rudder Left
+.>      Rudder Right
+?       Straight and Level
+====================================================
