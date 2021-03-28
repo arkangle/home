@@ -2,9 +2,9 @@
 Key     Action                  Shift
 ====================================================
 F1      Tactical Display        Run Shallow
-F2      Weapon Control          Search Left
-F3      Threat Display          Search Right
-F4      Periscope
+F2      Weapon Control          Run Deep
+F3      Threat Display          Search Left
+F4      Periscope               Search Right
 F5      Acoustic Signature.     Activate Torpedo
 F6      Compare Sonar
 F7      Ship Database
@@ -42,4 +42,16 @@ M       View Threat
 ,<      Rudder Left
 .>      Rudder Right
 ?       Straight and Level
+ESC.    Cancel Order
+
+====================================================
+Key     Action
+====================================================
+Alt T   Normal/Accelerated Time
+Alt P   Pause				 
+Alt H   Help from Computer
+Alt A   Action Track
+Alt V   Sound				 
+Alt R   Replay battle
+Alt Q   Quit
 ====================================================
