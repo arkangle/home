@@ -4,8 +4,8 @@ Key     Action                  Shift
 F1      Tactical Display        Run Shallow
 F2      Weapon Control          Search Left
 F3      Threat Display          Search Right
-F4      Periscope               Activate Torpedo
-F5      Acoustic Signature
+F4      Periscope
+F5      Acoustic Signature.     Activate Torpedo
 F6      Compare Sonar
 F7      Ship Database
 F8      Sea Condition           Map Overlay
